@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Liberis Content tool</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="body">
+    <div class="container">
+      <h1>Liberis Content Tool</h1>
+      <div>
+        <form class="form-wrapper">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="select-text" for="url">URL (must start with https or http) </label>
+              <input type="text" id="url" name="url" >
+              <input id="generate-btn" type="submit" value="Submit"> 
+            </div>
+            <div class="form-group">
+              <label for="source">Source:</label>
+              <input type="text" id="source" name="source"  /> 
+            </div>
+            <div class="form-group">
+                <label for="medium">Medium</label>
+              <select class="select-text" id="medium" name="medium">
+                <option value="EM">Email</option>
+                <option value="DM">Direct Mail</option>
+                <option value="DA">Dashboard</option>
+                <option value="SR">Sales Referral</option>
+                <option value="WS">Website</option>
+                <option value="PH">Phone</option>
+                <option value="IA">In-app notification</option>
+                <option value="PN">Push notification</option>
+                <option value="SA">Social advert</option>
+                <option value="GA">Google advert</option>
+              </select>
+            </div> 
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="campaign-year">Campaign Year</label>
+              <select class="select-text" id="campaign-year" name="campaign-year">
+              <option value="2022">2022</option>
+              <option value="2023">2023</option>
+              <option value="2024">2024</option>
+            </select> 
+            </div>
+            <div class="form-group">
+                <label for="campaign-month">Campaign Month</label>
+                <select class="select-text" id="campaign-month" name="campaign-month">
+                <option value="JAN">January</option>
+                <option value="FEB">February</option>
+                <option value="MAR">March</option>
+                <option value="APR">April</option>
+                <option value="MAY">May</option>
+                <option value="JUN">June</option>
+                <option value="JUL">July</option>
+                <option value="AUG">August</option>
+                <option value="SEP">September</option>
+                <option value="OCT">October</option>
+                <option value="NOV">November</option>
+                <option value="DEC">December</option>
+              </select> 
+            </div>
+            <div class="form-group">
+              <label for="campaign-segment">Campaign Segment</label>
+              <select class="select-text" id="campaign-segment" name="campaign-segment" placeholder="Eligible">
+                <option value="PRL">Pre Launch</option>
+                <option value="LAU">Launch</option>
+                <option value="ELI">Eligible</option>
+                <option value="PRE">Pre-approved</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+                <label for="campaign-chaser">Campaign Chaser</label>
+              <select class="select-text" id="campaign-chaser" name="campaign-chaser" placeholder="Openers">
+                <option value="">No chaser</option>
+                <option value="OP">Openers</option>
+                <option value="NO">Non-openers</option>
+                <option value="CL">Clicked</option>
+              </select> 
+            </div>
+            <div class="form-group">
+              <label for="campaign-touchpoint">Campaign Touchpoint</label>
+              <select class="select-text" id="campaign-touchpoint" name="campaign-touchpoint" placeholder="First">
+              <option value="1">First</option>
+              <option value="2">Second</option>
+              <option value="3">Third</option>
+            </select>  
+            </div>
+            <div class="form-group">
+              <label for="campaign-testing">Campaign Testing</label>
+              <select class="select-text" id="campaign-testing" name="campaign-testing" placeholder="A">
+              <option value="">No test</option>
+              <option value="A">Version A</option>
+              <option value="B">Version B</option>
+              </select>
+            </div> 
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="term">Term</label>
+              <input type="text" id="term" name="term" placeholder="">
+            </div>
+            <div class="form-group">
+              <label for="content">Content</label>
+              <select class="select-text" id="content" name="content">
+              <option value="MX">Liberis MX</option>
+              <option value="EV">Liberis Lite page</option>
+              <option value="AP">API</option>
+              <option value="WS">Partner website</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="content">Data</label>
+              <select class="select-text" id="content" name="content">
+              <option value="Data">Data available</option>
+              <option value="No data">No data</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit">Generate content</button>
+        </form>
+      </div>
+      </div>
+    </div>
+      <div class="content-container">
+        <div class="content">
+          <div class="subject-line" id="subject"></div>
+          <div class="image-file" id="image"></div>
+          <div class="output" id="output"></div>
+          <div class="link" id="link-container"></div>
+          <div class="generated-utm" id="result"></div>
+        </div>
+        
+      </div>
+    </div>
+    
+    <script src="app.js"></script>
+  </body>
+</html>

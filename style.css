@@ -1,0 +1,225 @@
+@font-face {
+  font-family: 'Sul Sans Regular';
+  src: url('https://liberisproductioncdn.blob.core.windows.net/fonts/SulSans-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  }
+  
+  .body {
+  font-family: 'Sul Sans Regular';
+  background-color: #fff;
+  color: #161031;
+  }
+  
+  .container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;  }
+
+  .code-block {
+    background-color: #inherit;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 14px;
+    font-family: 'Sul Sans Regular';
+}
+
+  .content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5px 25px;
+  text-align: left; 
+  background-color: #F7F3FF;
+  color: #161031;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  flex: 1; 
+
+  }
+
+  .content-container {
+    display: flex;
+    max-width: 1120px;
+    padding: 0px 40px 40px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .link-container {
+    max-width: 1100px;
+    background-color: #F7F3FF;
+    color: #161031;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+  }
+  
+  form {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 40px;
+  margin:40px; 
+  background-color: #F7F3FF;
+  color: #161031;
+
+  }
+  
+  label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea,
+  select {
+  padding: 8px;
+  margin-bottom: 16px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  }
+  
+  button[type="submit"] {
+    background-color: #86ed73;
+    color: #161031;
+    padding: 18px 20px;
+    margin: 20px auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 800;
+    font-family: 'Sul Sans Regular';
+    width: 350px;
+    display: block;
+  }
+  
+  button[type="submit"]:hover {
+  background-color: purple;
+  }
+  
+  #output,
+  #subject {
+  font-size: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5px 0px;
+  line-height: 25px;
+  text-align: left;
+  }
+
+  
+  #link {
+  font-size: 16px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0px 20px;
+  line-height: 25px;
+  text-align: left;
+  }
+
+  #visual {
+  font-size: 16px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px 0px;
+  line-height: 25px;
+  }
+
+
+  
+  .generated-utm {
+  font-size: 16px;
+  margin: 0 auto;
+  padding: 20px 0px;
+  line-height: 18px;
+  width: 100%;
+  text-align: left;
+  }
+  
+  #utm-string {
+  font-weight: bold;
+  color: red;
+  }
+  
+  #generate-btn {
+  display: none;
+  font-family: Sul Sans Regular;
+  }
+  
+  .hd-title {
+  text-align: center;
+  padding: 20px 0px 0px;
+  }
+  
+  .form-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  }
+  
+  .form-row div {
+  flex-basis: 32%;
+  margin-bottom: 20px;
+  }
+  
+  .form-row div label {
+  display: block;
+  margin-bottom: 5px;
+  }
+  
+  .form-row div select {
+  width: 100%;
+  padding: 10px;
+  }
+  
+  .form-wrapper label {
+  display: block;
+  margin-bottom: 5px;
+  }
+  
+  .form-wrapper input,
+  .form-wrapper select {
+  display: block;
+  margin-bottom: 10px;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-group select,
+  .form-group input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .select-text {
+    font-family: 'Sul Sans Regular';
+  }
+
+  #output, #subject {
+    padding: 0px 20xp;
+  }
+
+  
